@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="The Game of Life on an HTML5 Canvas" />
+
+        <title>The Game of Life</title>
+
+        <link rel="icon" type="image/png" href="../SharedImages/favicon4.png" />
+
+        <link rel="stylesheet" type="text/css" href="../SharedCSS/Style.css" />
+
+        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+        <script type="text/javascript" src="../SharedCode/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="../SharedCode/PageFooter.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body class="standardBody">
+        <div id="topContent">The Game of Life on an HTML5 Canvas</div>
+
+        <div class="box centreText">
+            <p>Click on a point on the canvas below to toggle the state of the cell at that point.</p>
+
+            <canvas id="myCanvas" class="centreUsingMargins tightBox" width="512" height="512">
+            </canvas>
+
+            <p id="generationNumber"></p>
+
+            <p>Rules:
+                <input type="radio" name="rbRules" id="rbStandard" onclick="rbRules_onClick()" /> Standard life
+                <input type="radio" name="rbRules" id="rb3_4" onclick="rbRules_onClick()" /> 3-4 life
+            </p>
+
+            <p>Inter-generational delay (in milliseconds):
+                <select id="ddlDelay" onchange="ddlDelay_onChange()">
+                    <option>100</option>
+                    <option selected="selected">300</option>
+                    <option>1000</option>
+                </select>
+            </p>
+
+            <p><input type="checkbox" id="cbAutoStop" onchange="cbAutoStop_onChange()" /> Enable auto-stop</p>
+
+            <p>
+                <input type="button" id="btnClear" value="Clear" onclick="btnClear_onClick()" />
+                <input type="button" id="btnRandom" value="Random" onclick="btnRandom_onClick()" />
+                <input type="button" id="btnRemember" value="Remember" onclick="btnRemember_onClick()" />
+                <input type="button" id="btnRecall" value="Recall" onclick="btnRecall_onClick()" />
+                <input type="button" id="btnStep" value="Step" onclick="btnStep_onClick()" />
+                <input type="button" id="btnGo" value="Go" onclick="btnGo_onClick()" />
+                <input type="button" id="btnStop" value="Stop" onclick="btnStop_onClick()" />
+            </p>
+
+            <p>Pattern:
+                <select id="ddlPatterns"></select>
+                <input type="button" id="btnLoad" value="Load" onclick="btnLoad_onClick()" />
+            </p>
+
+            <hr />
+
+            <p>
+                <a href="../index.html">Back to the Dynamic HTML Applications page</a>
+            </p>
+        </div>
+    </body>
+</html>

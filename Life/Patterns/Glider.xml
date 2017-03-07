@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Glider.xml -->
+
+<!--  *  -->
+<!--   * -->
+<!-- *** -->
+
+<pattern>
+  <name>Glider</name>
+  <width>3</width>
+  <height>3</height>
+  <rows>
+    <row>4</row>
+    <row>2</row>
+    <row>e</row>
+  </rows>
+</pattern>

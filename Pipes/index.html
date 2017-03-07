@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="The game of Pipes!" />
+
+        <title>Tom's Pipes!</title>
+
+        <link rel="icon" type="image/png" href="../SharedImages/favicon3.png" />
+
+        <link rel="stylesheet" type="text/css" href="../SharedCSS/Style.css" />
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+
+        <script type="text/javascript" src="../SharedCode/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="../SharedCode/PageFooter.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body class="standardBody">
+        <div id="topContent">Tom's Pipes!</div>
+
+        <div id="mainContent" class="box centreText">
+            <p id="message"></p>
+
+            <table id="pipeGrid"></table>
+
+            <p>
+                Width:
+                <input type="text" name="txtWidth" id="txtWidth" size="5" value="" />
+                Height:
+                <input type="text" name="txtHeight" id="txtHeight" size="5" value="" />
+                <input type="button" name="btnResize" id="btnResize" value="Resize" onclick="resizeGrid()" />
+            </p>
+
+            <p>
+                <a href="../index.html">Back to the Dynamic HTML Applications page</a>
+            </p>
+        </div>
+    </body>
+</html>

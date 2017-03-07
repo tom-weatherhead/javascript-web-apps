@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="The Mandelbrot Set on an HTML5 Canvas" />
+
+        <title>The Mandelbrot Set</title>
+
+        <link rel="icon" type="image/png" href="../SharedImages/favicon3.png" />
+
+        <link rel="stylesheet" type="text/css" href="../SharedCSS/Style.css" />
+
+        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+        <script type="text/javascript" src="../SharedCode/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="../SharedCode/PageFooter.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body class="standardBody">
+        <div id="topContent">The Mandelbrot Set on an HTML5 Canvas</div>
+
+        <div class="box centreText">
+            <p>Click on a point on the canvas below to zoom in on that point.</p>
+
+            <canvas id="myCanvas" class="centreUsingMargins tightBox" width="512" height="512">
+            </canvas>
+
+            <p>Zoom factor: 2 to the power of <span id="zoomExponent">0</span></p>
+
+            <p>
+                <input type="button" id="btnZoomOut" value="Zoom Out" onclick="zoomOut()" />
+                <input type="button" id="btnHome" value="Home" onclick="renderDefaultView()" />
+            </p>
+
+            <hr />
+
+            <p>
+                <a href="../index.html">Back to the Dynamic HTML Applications page</a>
+            </p>
+        </div>
+    </body>
+</html>

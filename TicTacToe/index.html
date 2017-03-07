@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="The game of Tic-Tac-Toe" />
+
+        <title>Tic-Tac-Toe</title>
+
+        <link rel="icon" type="image/png" href="../SharedImages/favicon3.png" />
+
+        <link rel="stylesheet" type="text/css" href="../SharedCSS/Style.css" />
+        <link rel="stylesheet" type="text/css" href="../Pipes/Style.css" />
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+
+        <script type="text/javascript" src="../SharedCode/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="../SharedCode/PageFooter.js"></script>
+        <script type="text/javascript" src="MoveLogic.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body class="standardBody">
+        <div id="topContent">Tic-Tac-Toe</div>
+
+        <div id="mainContent" class="box centreText">
+            <table id="board" class="centreUsingMargins tightBox">
+                <!-- We will use jQuery to populate this table when the document is ready. -->
+            </table>
+
+            <p id="turnMessage"></p>
+
+            <input type="button" name="btnNewGame" id="btnNewGame" value="New Game" onclick="newGame()" />
+        </div>
+
+        <div id="leftContentOuter">
+            <div id="leftContent">
+                <p class="playerTitleText">X</p>
+
+                <!-- <p>Number of pieces: <span id="numberOfWhitePiecesID"></span></p> -->
+
+                <p><input type="checkbox" id="cbAutomateX" onchange="cbAutomateX_onChange()" /> Automate</p>
+
+                <p>Lookahead depth:
+                    <select id="ddlLookaheadX" onchange="ddlLookaheadX_onChange()">
+                        <!-- We will use jQuery to populate this drop-down list when the document is ready. -->
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <div id="rightContentOuter">
+            <div id="rightContent">
+                <p class="playerTitleText">O</p>
+
+                <!-- <p>Number of pieces: <span id="numberOfBlackPiecesID"></span></p> -->
+
+                <p><input type="checkbox" id="cbAutomateO" onchange="cbAutomateO_onChange()" /> Automate</p>
+
+                <p>Lookahead depth:
+                    <select id="ddlLookaheadO" onchange="ddlLookaheadO_onChange()">
+                        <!-- We will use jQuery to populate this drop-down list when the document is ready. -->
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <div class="box centreText">
+            <p>
+                <a href="../index.html">Back to the Dynamic HTML Applications page</a>
+            </p>
+        </div>
+    </body>
+</html>

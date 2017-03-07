@@ -1,0 +1,15 @@
+/* FretInfo Style.css - Cascading Style Sheet - January 29, 2011 */
+
+#mainContent table
+{
+    border: 1px solid black;
+    margin-left: auto;      /* This line and the next are from http://www.granneman.com/webdev/coding/css/centertables/ ; they centre the table. */
+    margin-right: auto;
+}
+
+#mainContent th, #mainContent td
+{
+    border: 1px solid black;
+}
+
+/* **** End of File **** */

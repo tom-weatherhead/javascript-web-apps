@@ -1,0 +1,40 @@
+/* Blackjack/Style.css - Cascading Style Sheet - March 3, 2011 */
+
+#leftContentOuter
+{
+    position: absolute;
+    top: 55px;  /* topContent has height of 35px and margin of 10px, and 55 == 35 + 2 * 10. */
+    left: 0;
+    width: 50%;
+}
+
+#leftContent
+{
+    text-align: center;
+    height: 500px;
+    margin: 1px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#rightContentOuter
+{
+    margin: 0 0 0 50%;  /* 50% of the (screen? browser window?) width on the left side; zero on all other sides */
+}
+
+#rightContent
+{
+    text-align: center;
+    height: 500px;
+    margin: 1px 1px 1px 0;  /* Zero on the left side; 1 pixel on all other sides */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.playerTitleText
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* **** End of File **** */

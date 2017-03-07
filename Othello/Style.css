@@ -1,0 +1,45 @@
+/* Othello/Style.css - Cascading Style Sheet - March 7, 2012 */
+
+#mainContent
+{
+    height: 480px;
+}
+
+#leftContentOuter
+{
+    position: absolute;
+    top: 558px;  /* mainContent has a top of 55px, a height of 480px and margin of 10px, and 555 == 55 + 480 + 2 * 10. */
+    left: 0;
+    width: 50%;
+}
+
+#leftContent
+{
+    text-align: center;
+    height: 160px;
+    margin: 1px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#rightContentOuter
+{
+    margin: 0 0 0 50%;  /* 50% of the (screen? browser window?) width on the left side; zero on all other sides */
+}
+
+#rightContent
+{
+    text-align: center;
+    height: 160px;
+    margin: 1px 1px 1px 0;  /* Zero on the left side; 1 pixel on all other sides */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.playerTitleText
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* **** End of File **** */

@@ -1,0 +1,20 @@
+/* Pipes - Style.css - Cascading Style Sheet - February 8, 2011 */
+
+#mainContent table
+{
+    margin-left: auto;          /* This line and the next are from http://www.granneman.com/webdev/coding/css/centertables/ ; they centre the table. */
+    margin-right: auto;
+    border-collapse: collapse;  /* Or border-spacing: 0px; this helps to eliminate space in the table. */
+}
+
+#mainContent td
+{
+    padding: 0;                 /* Necessary for elimination of spacing between the cells. */
+}
+
+#mainContent img
+{
+    display: block;             /* To eliminate space below the image.  See http://www.loriswebs.com/html-tips/form-button.html . */
+}
+
+/* **** End of File **** */

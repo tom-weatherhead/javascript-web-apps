@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- GliderStopper.xml -->
+
+<pattern>
+  <name>Glider Stopper</name>
+  <width>12</width>
+  <height>12</height>
+  <rows>
+    <row>400</row>
+    <row>200</row>
+    <row>e00</row>
+    <row>000</row>
+    <row>000</row>
+    <row>000</row>
+    <row>000</row>
+    <row>000</row>
+    <row>00c</row>
+    <row>00a</row>
+    <row>002</row>
+    <row>003</row>
+  </rows>
+</pattern>

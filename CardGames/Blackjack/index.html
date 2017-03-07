@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="The card game Blackjack" />
+
+        <title>Blackjack</title>
+
+        <link rel="icon" type="image/png" href="../../SharedImages/favicon3.png" />
+
+        <link rel="stylesheet" type="text/css" href="../../SharedCSS/Style.css" />
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+
+        <script type="text/javascript" src="../../SharedCode/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="../../SharedCode/PageFooter.js"></script>
+        <script type="text/javascript" src="../SharedCode/DeckOfCards.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body class="standardBody">
+        <div id="topContent">Blackjack</div>
+
+        <div id="leftContentOuter">
+            <div id="leftContent">
+                <p class="playerTitleText">Player</p>
+
+                <table id="playerTable" class="centreUsingMargins">
+                    <!-- We will use jQuery to populate this table when the document is ready. -->
+                </table>
+
+                <p>Hand value = <span id="playerHandValueID"></span></p>
+                <p id="gameMessageID"></p>
+                <input type="button" name="btnHitMe" id="btnHitMe" value="Hit Me" onclick="hitMe()" />
+                <input type="button" name="btnStand" id="btnStand" value="Stand" onclick="stand()" />
+                <input type="button" name="btnNewGame" id="btnNewGame" value="New Game" onclick="newGame()" />
+            </div>
+        </div>
+
+        <div id="rightContentOuter">
+            <div id="rightContent">
+                <p class="playerTitleText">Dealer</p>
+
+                <table id="dealerTable" class="centreUsingMargins">
+                    <!-- We will use jQuery to populate this table when the document is ready. -->
+                </table>
+
+                <p>Hand value = <span id="dealerHandValueID"></span></p>
+            </div>
+        </div>
+
+        <div class="box centreText">
+            <p id="winsLossesTies"></p>
+            <p>
+                <a href="../../index.html">Back to the Dynamic HTML Applications page</a>
+            </p>
+        </div>
+    </body>
+</html>
